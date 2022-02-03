@@ -1,0 +1,82 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(212, 45%, 89%);
+    --grayish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: "Outfit", sans-serif;
+    justify-content: center;
+    background-color: lightblue;
+    font-size: 15px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.container {
+    max-width: 300px;
+    justify-content: center;
+    background-color: whitesmoke;
+    border-radius: 15px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.qr-wrapper {
+    padding: 15px;
+}
+
+.container article {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.container article h1 {
+    color: var(--dark-blue);
+    font-weight: 700;
+    padding: 0 1.2rem;
+ 
+}
+
+.container article p {
+    color: var(--grayish-blue);
+    font-weight: 400;
+    padding: 1rem 2rem 1.8rem;
+    font-size: 14.5px;
+}
+
+.qr-wrapper, .qr-wrapper > img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); text-decoration: none; color: var(--dark-blue); filter: brightness(180%); transition: color 0.4s ease; }
+
+.attribution a:hover {
+    color: rgb(7, 73, 73);
+    text-decoration: underline;
+}
